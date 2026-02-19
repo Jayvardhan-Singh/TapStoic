@@ -33,10 +33,10 @@ if st.button("Tap"):
 # Display data
 if st.session_state.intervals:
     df = pd.DataFrame(st.session_state.intervals, columns=["Intervals (seconds)"])
-    #st.dataframe(df)
+    st.dataframe(df)
 # User can Stop the training by pressin STOP button.
 if st.button("STOP"):
     st.session_state.last_tap_time = None
     st.session_state.intervals = []
-    st.bar_chart(df)
-    st.line_chart(df)
+    st.bar_chart(df.iloc[1:-1])  # To exclude first Two and last interval from Chart
+    st.line_chart(df.iloc[1:-1])  # To exclude first Two and last interval from Chart
