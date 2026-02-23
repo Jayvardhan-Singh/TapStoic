@@ -24,8 +24,8 @@ if 'intervals' not in st.session_state:
 ###############################################################################################
 ###############################################################################################
 if side == "Stage 1: Simple Tap":
-    st.header("Tap Interval Timer")
-    st.markdown("Step-wise instructions: 1. Point the cursor on Tap button. 2. Close your eyes and Tap at the start of each Inspiration. 3. Press the Stop Button to end the session.")
+    st.header("Stage 1: Simple Tap")
+    st.markdown("Step-wise instructions:  \n  \n1. Point the cursor on Tap button.  \n2. Close your eyes and Tap at the start of each Inspiration.  \n3. Press the Stop Button to end the session.")
 
     if st.button("TAP", width='stretch'):
         current_time = time.time()
@@ -57,8 +57,8 @@ if side == "Stage 1: Simple Tap":
 ###############################################################################################
 ###############################################################################################
 elif side == "Stage 2: Skip 5th":
-    st.header("Tap Interval Timer")
-    st.markdown("Step-wise instructions: 1. Point the cursor on Tap button. 2. Close your eyes and Tap at the start of Inspiration. 3. Skip Tap on each 5th Inspiration. 4. Press the Stop Button to end the session.")
+    st.header("Stage 2: Skip 5th")
+    st.markdown("Step-wise instructions:  \n  \n1. Point the cursor on Tap button.  \n2. Close your eyes and Tap at the start of Inspiration.  \n3. Skip Tap on each 5th Inspiration.  \n4. Press the Stop Button to end the session.")
 
     if st.button("TAP", width='stretch'):
         current_time = time.time()
@@ -89,8 +89,8 @@ elif side == "Stage 2: Skip 5th":
 ###############################################################################################
 ###############################################################################################
 elif side == "Stage 3: Audio":
-    st.header("Tap Interval Timer Stage 3")
-    st.markdown("Step-wise instructions: 1. Record the thought which is looping inside your mind by pressing the record button. 2. Stop the recording and then play it. 3. While the record is playing Tap at the start of each Inspiration and Keep skipping each 5th Breath like that of stage 2. Press the Stop Button to end the session.")
+    st.header("Stage 3: Audio")
+    st.markdown("Step-wise instructions:  \n  \n1. Record the thought which is looping inside your mind by pressing the record button.  \n2. Stop the recording and then play it.  \n3. While the record is playing Tap at the start of each Inspiration and Keep skipping each 5th Breath like that of stage 2.  \n4. Press the Stop Button to end the session.")
 
     # Record audio from the user's microphone
     audio_file = st.audio_input("Record a voice message of the thought that is looping inside your mind")
@@ -127,8 +127,8 @@ elif side == "Stage 3: Audio":
 ###############################################################################################
 ###############################################################################################
 elif side == "Stage 4: Visual":
-    st.header("Tap Interval Timer Stage 4")
-    st.markdown("Step-wise instructions: 1. Upload the image which is looping inside your mind 2. Watch the image, Point the curson on the Tap Button and then close your eyes. 3. Tap at the start of each Inspiration and Keep skipping each 5th Breath like that of stage 2. Press the Stop Button to end the session.")
+    st.header("Stage 4: Visual")
+    st.markdown("Step-wise instructions:  \n  \n1. Upload the image which is looping inside your mind  \n2. Watch the image, Point the curson on the Tap Button and then close your eyes.  \n3. Tap at the start of each Inspiration and Keep skipping each 5th Breath like that of stage 2.  \n4. Press the Stop Button to end the session.")
 
     # Upload an image
     image = st.file_uploader("Upload an image which is causing emotional turmoil", type = ['jpg', 'jpeg', 'png'])
@@ -164,8 +164,8 @@ elif side == "Stage 4: Visual":
 ###############################################################################################
 ###############################################################################################
 else:
-    st.header("Tap Interval Timer Stage 5")
-    st.markdown("Step-wise instructions: 1. Upload the image like Stage 4 2. Record the Audio as Stage 3 3. Tap at the start of each Inspiration and Keep skipping each 5th Breath like that of stage 2. Press the Stop Button to end the session.")
+    st.header("Stage 5: Audio + Visual")
+    st.markdown("Step-wise instructions: \n  \n1. Upload the image like Stage 4  \n2. Record the Audio as Stage 3  \n3. Tap at the start of each Inspiration and Keep skipping each 5th Breath like that of stage 2.  \n4. Press the Stop Button to end the session.")
 
     # Upload an image
     image = st.file_uploader("Upload an image which is causing emotional turmoil", type = ['jpg', 'jpeg', 'png'])
