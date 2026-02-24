@@ -6,7 +6,7 @@ st.set_page_config(
     page_title= "TapStoic",
     initial_sidebar_state= 'expanded',
     menu_items={
-        "About": 'Training to Increase *Attention Accuracy* during *Emotion turmoil* Can provide a time-window in *Real-Life* High-stakes Situations'
+        "About": 'Training to Increase *Attention Accuracy* during *Emotion turmoil* Can provide a time-window in *Real-Life* High-stakes Situations.  \n  \nDisclaimer: This is not a SaMD (Software as a Medical Device)'
     }
 )
 
