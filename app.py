@@ -85,7 +85,7 @@ elif side == "Stage 2: Skip 5th":
         st.bar_chart(df)
         st.line_chart(df)
         st.dataframe(df) # Of all the data without exclusion 
-        st.table(df)
+        st.table(df.describe())
 ###############################################################################################
 ###############################################################################################
 elif side == "Stage 3: Audio":
@@ -123,7 +123,7 @@ elif side == "Stage 3: Audio":
         st.bar_chart(df)
         st.line_chart(df)
         st.dataframe(df) # Of all the data without exclusion 
-        st.table(df)
+        st.table(df.describe())
 ###############################################################################################
 ###############################################################################################
 elif side == "Stage 4: Visual":
@@ -160,7 +160,7 @@ elif side == "Stage 4: Visual":
         st.bar_chart(df)
         st.line_chart(df)
         st.dataframe(df) # Of all the data without exclusion 
-        st.table(df)
+        st.table(df.describe())
 ###############################################################################################
 ###############################################################################################
 else:
@@ -203,6 +203,6 @@ else:
         st.bar_chart(df)
         st.line_chart(df)
         st.dataframe(df) # Of all the data without exclusion 
-        st.table(df)
+        st.table(df.describe())
 ###############################################################################################
 ###############################################################################################
